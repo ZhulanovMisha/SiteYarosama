@@ -4,16 +4,16 @@
 }
 
 body {
-    background: #FFF;
+    background: #fff;
 }
 
 ul {
-    /*убираем маркеры списка*/
-    list-style: none;
     /*убираем верхнее и нижнее поле, равное 1em*/
     margin: 0;
     /*убираем левый отступ, равный 40px*/
     padding-left: 0;
+    /*убираем маркеры списка*/
+    list-style: none;
 }
 
 a {
@@ -28,16 +28,16 @@ a {
 /* Размещение логотипа*/
 
 header {
-    width: 868px;
-    height: 192px;
-    color: #FFF;
-    font-size: 48px;
     font-family: Century Gothic;
-    padding-top: 150px;
-    padding-left: 100px;
-    background: url(img/logo.jpg) no-repeat;
-    background-size: 968px 342px;
+    font-size: 24px;
+    width: 918px;
+    height: 100px;
     margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 50px;
+    color: #fff;
+    background: url(img/logo.jpg) no-repeat;
+    background-size: 968px 150px;
 }
 
 
@@ -49,30 +49,30 @@ header {
 .ellipse-bottom {
     width: 968px;
     height: 72px;
+    margin: 0 auto;
     background: url(img/menu-ellipse.png) no-repeat;
     background-position: left bottom;
-    margin: 0 auto;
 }
 
 .ellipse-top-first {
-    width: 813px;
-    height: 57px;
     position: relative;
     top: -57px;
+    width: 813px;
+    height: 57px;
+    pointer-events: none;
     background: url(img/ellipse-top-first.png) no-repeat;
     background-position: left bottom;
-    pointer-events: none margin: 0 auto;
 }
 
 .ellipse-top-second {
+    position: relative;
+    top: -114px;
+    left: 667px;
     width: 301px;
     height: 57px;
-    position: relative;
-    left: 667px;
-    top: -114px;
+    pointer-events: none;
     background: url(img/ellipse-top-second.png) no-repeat;
     background-position: left bottom;
-    pointer-events: none margin: 0 auto;
 }
 
 
@@ -84,15 +84,9 @@ header {
 .menu {
     width: 968px;
     height: 57px;
-    background: url(img/menu-background.png) no-repeat;
-    background-size: cover;
-    background: -webkit-linear-gradient(90deg, #db9816 0%, #ecb03b 100%);
-    background: -moz-linear-gradient(90deg, #db9816 0%, #ecb03b 100%);
-    background: -o-linear-gradient(90deg, #db9816 0%, #ecb03b 100%);
-    background: -ms-linear-gradient(90deg, #db9816 0%, #ecb03b 100%);
-    background: linear-gradient(0deg, #db9816 0%, #ecb03b 100%);
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
     margin: 0 auto;
+    background: linear-gradient(0deg, #db9816 0%, #ecb03b 100%);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, .15);
 }
 
 .menu li {
@@ -100,36 +94,36 @@ header {
 }
 
 .menu li a {
+    font-family: Myriad Pro;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 57px;
     display: block;
     height: 57px;
     padding-right: 26px;
     padding-left: 25px;
-    line-height: 57px;
-    color: #7b4800;
-    font-size: 16px;
-    font-family: Myriad Pro;
-    font-weight: 400;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.36);
-    background: url(img/menu-line.png) no-repeat;
-    background-size: 2px, 36px;
-    background-position: left center;
     text-align: center;
+    color: #7b4800;
+    background: url(img/menu-line.png) no-repeat;
+    background-position: left center;
+    background-size: 2px, 36px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .36);
 }
 
 .menu li:first-child a {
-    display: block;
-    height: 57px;
     line-height: 57px;
+    display: block;
     width: 40px;
-    padding-right: 0px;
-    padding-left: 0px;
+    height: 57px;
+    padding-right: 0;
+    padding-left: 0;
     background: url(img/menu-button-home.png) no-repeat;
-    background-position: center;
+    background-position: 10px;
 }
 
 .menu li:first-child a:hover {
     background: url(img/menu-button-home-hover.png) no-repeat;
-    background-position: center;
+    background-position: 10px;
 }
 
 .menu li:hover a {
@@ -143,16 +137,102 @@ header {
 /* Слоган*/
 
 .slogan {
-    width: 905px;
-    height: 171px;
     font-family: Monotype Corsiva;
-    color: #63573a;
     font-size: 30px;
     font-weight: 400;
     line-height: 36px;
-    text-align: left;
-    margin-left: 27px;
+    width: 905px;
+    height: 50px;
     margin: 0 auto;
+    text-align: center;
+    color: #63573a;
+}
+
+.slogan i {
+    font-size: 15px;
+}
+
+
+/****************************************************/
+
+
+/* Новости*/
+
+.news {
+    width: 913px;
+    height: 370px;
+    margin: 0 auto;
+    background-color: rgba(221, 157, 26, .38);
+}
+
+.news-caption {
+    font-family: Monotype Corsiva;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 55px;
+    width: 184px;
+    height: 55px;
+    margin: 0 auto;
+    text-align: center;
+    color: #63573a;
+}
+
+.trip-first {
+    width: 304px;
+    height: 370px;
+    background: url(img/trip-first.jpg) no-repeat;
+    background-position: top;
+    background-size: 304px, 203px;
+}
+
+.trip-second {
+    position: relative;
+    top: -370px;
+    left: 304px;
+    width: 304px;
+    height: 370px;
+    background: url(img/trip-second.jpg) no-repeat;
+    background-position: top;
+    background-size: 304px, 203px;
+}
+
+.trip-third {
+    position: relative;
+    top: -740px;
+    left: 608px;
+    width: 304px;
+    height: 370px;
+    background: url(img/trip-third.jpg) no-repeat;
+    background-position: top;
+    background-size: 304px, 203px;
+}
+
+.trip-date {
+    position: relative;
+    top: 217px;
+    left: 19px;
+    font-family: Century Gothic;
+    color: #76715f;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    width: 285px;
+}
+
+.news a {
+    display: block;
+    position: relative;
+    top: 230px;
+    left: 17px;
+    font-family: Century Gothic;
+    color: #97632e;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    text-decoration: underline;
+    text-align: left;
+    width: 250px;
+    height: 41px;
 }
 
 
